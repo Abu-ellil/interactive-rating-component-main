@@ -21,28 +21,34 @@
 body{
   font-family: 'Overpass', sans-serif;
   background-color: hsl(216, 12%, 8%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  
-}
-
-.how-section{
-  width: 1440px;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
+.how-section{
+    /* position: relative; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.attribution { 
+  font-size: 11px;
+ align-self: center;
+ color: #777;
+  }
+.attribution a { color: hsl(228, 45%, 44%); }
 .how{
-  padding: 20px;
+  padding:20px;
   height: 400px;
   width: 400px;
   background-image: linear-gradient(to top,hsl(215, 27%, 12%),hsl(212, 25%, 12%),hsl(215, 27%, 12%));
   border-radius: 20px;
   
 }
+
 .how-ico{
   background-color: hsl(213, 19%, 18%);
   height: 50px;
@@ -63,12 +69,14 @@ body{
   color: hsl(217, 12%, 63%);
   line-height: 1.7;
 }
-.how-num{
+.how-ul{
+  list-style: none;
   display: flex;
   justify-content: space-evenly;
   padding-top: 32px;
+ 
 }
-.how-num a{
+.how-ul button{
   background-color: hsl(213, 19%, 18%);
   border-radius: 50%;
   height: 50px;
@@ -76,20 +84,17 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-}
-a:active,a:visited{
-
- 
   color: hsl(0, 0%, 100%);
-  
+  border: none;
+  transition: .5s;
 }
-.how-num .selected{
-  background-color:  hsl(216, 12%, 54%) ;
-}
-.how-num a:hover{
+.how-ul button:hover{
   cursor: pointer;
-  background-color:  hsl(216, 12%, 54%) ;
+  background-color:  hsl(25, 97%, 53%) ;
+}
+.how-ul button:focus{
+  cursor: pointer;
+  background-color:  hsl(217, 12%, 63%) ;
 }
 .how-btn{
   padding-top: 18px;
@@ -105,14 +110,82 @@ a:active,a:visited{
   letter-spacing: 1px;
   font-size: 18px;
   background-color: hsl(25, 97%, 53%);
-  padding: 12px 35%; 
+  width: 100%;
+  padding: 1.04rem;
   border-radius: 50px;
   cursor: pointer;
+  transition: .3s;
 }
 .how-btn button:hover{
-  background-color: hsl(25, 99%, 39%);
+  background-color: hsl(25, 89%, 63%);
   cursor: pointer;
 }
+/************************************/
+/************************************/
+/************************************/
+.thank-you{
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+  background-image: linear-gradient(to top,hsl(215, 27%, 12%),hsl(212, 25%, 12%),hsl(215, 27%, 12%));
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thank-you-ico{
+  padding-bottom: 40px;
+}
+.thank-you .rate{
+  background-color:hsl(214, 18%, 15%) ;
+  padding: .5rem .8rem .6rem ;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.thank-you .rate p{
+  color: hsl(25, 97%, 53%);}
+.thank-you h2{
+  color: #fff;
+  padding: 20px;
+}
+
+.thank-you p{
+  color: hsl(217, 12%, 63%);
+text-align: center;
+}
+#again{
+  border: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    padding: .7rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/****************************/
+/****************************/
+/****************************/
+.hidden{
+  display: none;
+}
+/****************************/
+/****************************/
+/****************************/
+
+
+
+
+
+
+
+
+
 
 
 
