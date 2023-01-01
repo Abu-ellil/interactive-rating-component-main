@@ -1,0 +1,166 @@
+/**
+- Mobile: 375px
+- Desktop: 1440px
+- Orange: hsl(25, 97%, 53%)
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+- Font size (paragraph): 15px
+
+#232a34
+#171e28
+#
+*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Overpass', sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.how-section{
+  width: 1440px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.how{
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+  background-image: linear-gradient(to top,hsl(215, 27%, 12%),hsl(212, 25%, 12%),hsl(215, 27%, 12%));
+  border-radius: 20px;
+  
+}
+.how-ico{
+  background-color: hsl(213, 19%, 18%);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  border-radius: 50%;
+}
+.icoo{
+  transform: translate(100% , 100%);
+}
+.how h1{
+  color: hsl(0, 0%, 100%);
+  padding-top: 32px;
+}
+.how p{
+  font-size: 15px;
+  padding-top: 12px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.7;
+}
+.how-num{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 32px;
+}
+.how-num a{
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+a:active,a:visited{
+
+ 
+  color: hsl(0, 0%, 100%);
+  
+}
+.how-num .selected{
+  background-color:  hsl(216, 12%, 54%) ;
+}
+.how-num a:hover{
+  cursor: pointer;
+  background-color:  hsl(216, 12%, 54%) ;
+}
+.how-btn{
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.how-btn button{
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 18px;
+  background-color: hsl(25, 97%, 53%);
+  padding: 12px 35%; 
+  border-radius: 50px;
+  cursor: pointer;
+}
+.how-btn button:hover{
+  background-color: hsl(25, 99%, 39%);
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width:400px){
+  .how-section{
+    width: 350px;
+   
+  }
+  .how{
+    height:300px;
+   
+  }
+  .icoo{
+    transform: translate(80% , 80%);
+  }
+  .how-ico{
+  
+    height: 42px;
+    width: 42px;
+  }
+  .how h1{
+    padding-top: 10px;
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+  }
+  .how p{
+    font-size: 14px;
+   
+    color: hsl(217, 12%, 63%);
+    line-height: 1.3;
+  }
+  .how-ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 22px;
+    color: hsl(0, 0%, 100%);
+  }
+  .how-ul li{
+    height: 42px;
+    width: 42px;
+    font-size: 10px;
+  }
+  .how-btn button{
+    padding: 8px 82px;
+    font-size: 18px;
+  }
+
+
+}
